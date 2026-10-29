@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
-from PIL import Image
+import cv2
 
-# Ścieżka do obrazu
-img = Image.open('Lemon.jpg')
+# Ścieżka do obrazu z wykorzysatniem biblioteki OpenCV
+img = cv2.imread('Lemon.jpg')
 
 #  Wyświetlenie obrazu za pomocą matplotlib
 plt.imshow(img)
