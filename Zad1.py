@@ -23,3 +23,8 @@ resized_img = cv2.resize(
 print(resized_img.shape)
 plt.imshow(resized_img)
 plt.show()
+
+# Konwersja obrazu na gray-scale i wyświetlenie go
+img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_RGB2GRAY)
+plt.imshow(img_gray, cmap='gray')
+plt.show()
