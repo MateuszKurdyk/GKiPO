@@ -11,7 +11,7 @@ img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 plt.imshow(img_rgb)
 plt.show()
 # Wyświetla wymiary i kanały obrazu (wyskość, szerokość, l.kanałów)
-print(img_rgb.shape)
+# print(img_rgb.shape)
 # 3. 
 # Dzieki shape możemy zmienić wymiary obrazu
 new_height = int(img_rgb.shape[0] * 0.5)
@@ -20,14 +20,14 @@ new_width = int(img_rgb.shape[1] * 0.5)
 resized_img = cv2.resize(
     img_rgb, (new_width, new_height)
 )
-print(resized_img.shape)
-plt.imshow(resized_img)
-plt.show()
+# print(resized_img.shape)
+# plt.imshow(resized_img)
+# plt.show()
 
 # Konwersja obrazu na gray-scale i wyświetlenie go (cmap aby wyświetlic w odcieniach szarości)
 img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_RGB2GRAY)
-plt.imshow(img_gray, cmap='gray')
-plt.show()
+# plt.imshow(img_gray, cmap='gray')
+# plt.show()
 
 # 4.
 # Rotacja obrazu o 90 stopni, zgodnie z ruchem wskazówek zegara
