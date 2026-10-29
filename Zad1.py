@@ -24,7 +24,18 @@ print(resized_img.shape)
 plt.imshow(resized_img)
 plt.show()
 
-# Konwersja obrazu na gray-scale i wyświetlenie go
+# Konwersja obrazu na gray-scale i wyświetlenie go (cmap aby wyświetlic w odcieniach szarości)
 img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_RGB2GRAY)
 plt.imshow(img_gray, cmap='gray')
 plt.show()
+
+# 4.
+# Rotacja obrazu o 90 stopni, zgodnie z ruchem wskazówek zegara
+img_rotated90 = cv2.rotate(img_gray, cv2.ROTATE_90_CLOCKWISE)
+# 5.
+# Wyświetlenie obrazu wynikowego po wszystkich operacjach
+plt.imshow(img_rotated90, cmap='gray')
+plt.show()
+# 6.
+# Wyświetlenie macierzy obrazu / w postaci tablicy liczb
+print(img_rotated90)
