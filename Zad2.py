@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+import cv2
+
+
+regular = cv2.imread('Lemon.jpg')
+overexposed = cv2.imread('overexposed.JPG')
+underexposed = cv2.imread('underexposed.jpg')
+regular_rgb = cv2.cvtColor(regular, cv2.COLOR_BGR2RGB)
+overexposed_rgb = cv2.cvtColor(overexposed, cv2.COLOR_BGR2RGB)
+underexposed_rgb = cv2.cvtColor(underexposed, cv2.COLOR_BGR2RGB)
+
+plt.imshow(regular_rgb)
+plt.show()
+plt.imshow(overexposed_rgb)
+plt.show()
+plt.imshow(underexposed_rgb)
+plt.show()
